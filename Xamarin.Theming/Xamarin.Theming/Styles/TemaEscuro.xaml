@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary  xmlns="http://xamarin.com/schemas/2014/forms" 
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:extensions="clr-namespace:Xamarin.Theming.Extensions"
+                     mc:Ignorable="d"
+                     x:Class="Xamarin.Theming.Styles.TemaEscuro"
+                     Source="TemaBase.xaml">
+    
+    <x:String x:Key="TituloString">Boa noite!</x:String>
+    <x:String x:Key="CorpoString">Você está utilizando um tema escuro no Xamarin.Forms</x:String>
+
+    <Color x:Key="CorDeFundo">#FF000000</Color>
+    <Color x:Key="CorPrimariaTexto">#B0FFFFFF</Color>
+    <Color x:Key="CorSecundariaTexto">#B0FFFFFF</Color>
+
+    <Style x:Key="EstiloLogoXamarin" TargetType="Image">
+        <Setter Property="Source"
+                Value="{extensions:ImageResource Xamarin.Theming.Resources.Images.xamagon_white.png}"/>
+    </Style>
+    
+</ResourceDictionary>

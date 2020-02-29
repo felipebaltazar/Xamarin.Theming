@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:extensions="clr-namespace:Xamarin.Theming.Extensions"
+                    mc:Ignorable="d"
+                    x:Class="Xamarin.Theming.Styles.TemaClaro"
+                    Source="TemaBase.xaml">
+    
+    <x:String x:Key="TituloString">Bom dia!</x:String>
+    <x:String x:Key="CorpoString">Você está utilizando um tema claro no Xamarin.Forms</x:String>
+    
+    <Color x:Key="CorDeFundo">#FFFFFFFF</Color>
+    <Color x:Key="CorPrimariaTexto">#B0000000</Color>
+    <Color x:Key="CorSecundariaTexto">#80000000</Color>
+
+    <Style x:Key="EstiloLogoXamarin" TargetType="Image">
+        <Setter Property="Source"
+                Value="{extensions:ImageResource Xamarin.Theming.Resources.Images.xamagon_black.png}"/>
+    </Style>
+    
+</ResourceDictionary>
