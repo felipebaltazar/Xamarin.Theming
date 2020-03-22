@@ -19,5 +19,9 @@
         <Setter Property="Source"
                 Value="{extensions:ImageResource Xamarin.Theming.Resources.Images.xamagon_black.png}"/>
     </Style>
-    
+
+    <Color x:Key="EntryCorDeFundo">White</Color>
+    <Color x:Key="EntryCorTexto">Black</Color>
+    <Color x:Key="ButtonCorDeFundo">#0188d8</Color>
+    <Color x:Key="ButtonCorTexto">White</Color>
 </ResourceDictionary>

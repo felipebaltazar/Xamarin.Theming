@@ -5,6 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Xamarin.Theming.Views.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Opacity="0"
              BackgroundColor="{DynamicResource CorDeFundo}">
     <ContentPage.Content>
         <Grid>

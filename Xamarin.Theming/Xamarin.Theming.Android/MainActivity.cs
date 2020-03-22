@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Content.Res;
 using Android.OS;
+using Android.Views;
 
 namespace Xamarin.Theming.Droid
 {
@@ -19,7 +20,10 @@ namespace Xamarin.Theming.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            this.Window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
+
             LoadApplication(new App());
+            PegarTemaAtual(Resources.Configuration);
         }
 
         public override void OnConfigurationChanged(Configuration newConfig)
@@ -35,7 +39,7 @@ namespace Xamarin.Theming.Droid
             if ((newConfig.UiMode & UiMode.NightNo) != 0)
                 return TemaTipo.Claro;
 
-            return  TemaTipo.Escuro;
+            return TemaTipo.Escuro;
         }
     }
 }

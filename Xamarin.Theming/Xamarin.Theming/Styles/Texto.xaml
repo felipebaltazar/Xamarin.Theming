@@ -41,4 +41,11 @@
                 Value="{StaticResource TamanhoFonteCorpo}" />
     </Style>
 
+    <Style x:Key="EntryEstiloLogin" TargetType="Entry">
+        <Setter Property="HeightRequest" Value="45"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource EntryCorDeFundo}"/>
+        <Setter Property="PlaceholderColor" Value="DarkGray"/>
+        <Setter Property="TextColor" Value="{DynamicResource EntryCorTexto}"/>
+    </Style>
+    
 </ResourceDictionary>

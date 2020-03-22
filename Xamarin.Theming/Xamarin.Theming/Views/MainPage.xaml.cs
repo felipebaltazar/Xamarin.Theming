@@ -16,5 +16,11 @@ namespace Xamarin.Theming.Views
         {
             InitializeComponent();
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await this.FadeTo(1);
+        }
     }
 }

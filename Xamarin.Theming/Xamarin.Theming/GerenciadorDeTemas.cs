@@ -9,8 +9,6 @@ namespace Xamarin.Theming
 
         public static void DefinirTema(TemaTipo tema)
         {
-            if (TemaAtual == tema) return;
-
             switch (tema)
             {
                 case TemaTipo.Escuro:
@@ -27,6 +25,9 @@ namespace Xamarin.Theming
 
         private static void DefinirResources<T>() where T : ResourceDictionary, new()
         {
+            if (App.Current.Resources is T)
+                return;
+
             var novoTema = new T();
             App.Current.Resources = novoTema;
         }
