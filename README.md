@@ -8,8 +8,12 @@
 
 ## Demonstração
 
-<p align="center">
+
+<p align="left" >
 	<kbd>
+		<img src="https://miro.medium.com/max/766/1*FC_uHqpcU_SG21GJDyf57w.gif" alt="image" style="max-width:100%;"/>
+	</kbd>
+		<kbd>
 		<img src="https://user-images.githubusercontent.com/19656249/75615242-15bcd780-5b20-11ea-89fa-f71543e215e6.gif" alt="image" style="max-width:100%;"/>
 	</kbd>
 </p>
